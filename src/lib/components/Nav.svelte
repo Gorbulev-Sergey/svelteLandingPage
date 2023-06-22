@@ -14,10 +14,12 @@
 		<a href="/" class="btn btn-light text-dark border-0 text-uppercase" style="background:rgba(243,218,11,.4)">
 			<b>Наш продукт</b>
 		</a>
-		<div class="d-flex align-items-center">
+	</nav>
+	<nav
+		class="position-fixed bottom-0 w-100 d-flex flex-column align-items-center justify-content-between bg-light bg-opacity-10 gap-1 px-3 py-2">
+		<div class="d-flex align-items-center gap-1">
 			{#each routes as item}
-				<a href="#{item.url}" class="btn btn-sm btn-light bg-light bg-opacity-50 border-0 text-dark ms-1"
-					>{item.text}</a>
+				<a href="#{item.url}" class="btn btn-light bg-light bg-opacity-50 border-0 text-dark">{item.text}</a>
 			{/each}
 		</div>
 	</nav>
@@ -27,9 +29,9 @@
 		<a href="/" class="btn btn-light text-dark border-0 text-uppercase" style="background:rgba(243,218,11,.4)">
 			<b>Наш продукт</b>
 		</a>
-		<div class="d-flex align-items-center">
+		<div class="d-flex align-items-center gap-2">
 			{#each routes as item}
-				<a href="#{item.url}" class="btn btn-light bg-light bg-opacity-50 border-0 text-dark ms-2">{item.text}</a>
+				<a href="#{item.url}" class="btn btn-light bg-light bg-opacity-50 border-0 text-dark">{item.text}</a>
 			{/each}
 		</div>
 	</nav>
